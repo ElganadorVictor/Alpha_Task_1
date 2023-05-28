@@ -202,180 +202,6 @@
   height: 477px;
 }
 
-/* --------------------------------------------Responsiveness ------------------------------------- */
-/* -------------------------------------------Responsivenes----------------------------------------------*/
-/* @media only screen and (max-width: 960px) {
-  .nav_bar {
-    gap: 100px;
-    padding: 10px 40px 0 40px;
-  }
-  .menu-bar ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 5px;
-  }
-  .container_1_content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    padding: 10px 40px 0 40px;
-  }
-  .heading h1 {
-    font-size: 28px;
-  }
-  .heading p {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    margin-top: 15px;
-    color: #353434;
-  }
-  .appointment-card {
-    background-color: #fbfbfb;
-    border-radius: 12px;
-    padding: 10px 20px 0px 20px;
-    position: relative;
-    width: 400px;
-    box-shadow: 1px 1px 3px 3px #f6f6f6;
-    margin-top: 80px;
-  }
-  .appointment-card-top {
-    padding: 10px 0px 20px 0px;
-  }
-  .appointment-card-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0px 5px 0px;
-  }
-  .location-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 3px 5px 0px;
-    margin-right: 3px;
-    font-size: 12px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-  }
-  .location-card img,
-  .calendar-card img,
-  .clock-card img {
-    width: 30px;
-    height: 31px;
-  }
-  .calendar-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0px 5px 0px;
-    margin-left: -18px;
-    font-size: 12px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-  }
-  .clock-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0px 5px 0px;
-    width: 120px;
-  }
-  .clock-card span {
-    font-size: 12px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    margin-right: 1px;
-  }
-  .appointment-card-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0px 5px 0px;
-  }
-  .appointment-card-22 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 290px;
-  }
-  .appointment-card-top span {
-    font-size: 10px;
-    width: 100px;
-    padding: 8px 0px;
-    text-align: center;
-  }
-  .appointment-card-bottom p {
-    font-size: 10px;
-    width: 100px;
-    padding: 8px 0px;
-    margin-left: -40px;
-    margin-bottom: 10px;
-  }
-  .appointment-card-top p {
-    font-size: 14px;
-  }
-  .container_1_right_content img {
-    margin-left: -55px;
-    width: 590px;
-    height: 377px;
-  }
-} */
-
-/* ---------------------------Responsiveness ------------------------------------- */
-
-/* ---------------------------Responsiveness ------------------------------------- */
-/* ---------------------------Responsiveness ------------------------------------- */
-@media only screen and (max-width: 760px) {
-  .nav_bar {
-    gap: 80px;
-    padding: 10px 10px 0 10px;
-  }
-  .menu-bar ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 10px;
-  }
-  .menu-bar ul li a {
-    font-size: 14px;
-  }
-  .container_1_content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    width: 100%;
-    margin-left: -130px;
-  }
-  .heading h1 {
-    width: 500px;
-  }
-  .heading p {
-    font-size: 14px;
-    margin-top: 15px;
-    width: 500px;
-  }
-  .appointment-card {
-    background-color: #fbfbfb;
-    border-radius: 12px;
-    padding: 10px 20px 0px 20px;
-    position: relative;
-    width: 400px;
-    box-shadow: 1px 1px 3px 3px #f6f6f6;
-    margin-top: 30px;
-    margin-bottom: 50px;
-  }
-  .container_1_right_content img {
-    margin-left: 120px;
-    width: 490px;
-    height: 277px;
-  }
-}
-/* --------------------------------Responsiveness------------------------------- */
-/* ------------------------------------------------------------------------------ */
-
 .container_2,
 .div-cert {
   display: flex;
@@ -1122,11 +948,13 @@ footer {
     gap: 150px;
     padding: 10px 40px 0 40px;
   }
+  .menu-bar ul li a {
+    font-size: 14px;
+  }
   .container_1_content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: -130px;
     padding: 10px 10px 0 145px;
   }
   .container_1_left_content {
@@ -1138,8 +966,6 @@ footer {
     text-align: center;
   }
   .heading p {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
     font-size: 13px;
     margin-top: 15px;
     margin-bottom: -35px;
@@ -1155,59 +981,15 @@ footer {
     width: 500px;
     box-shadow: 1px 1px 3px 3px #f6f6f6;
     margin-top: 80px;
+    margin-bottom: 50px;
   }
   .appointment-card-top {
     padding: 10px 0px 20px 0px;
   }
   .appointment-card-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 10px 0px 5px 0px;
   }
-  /* .location-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 3px 5px 0px;
-    margin-right: 3px;
-    font-size: 12px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-  }
-  .location-card img,
-  .calendar-card img,
-  .clock-card img {
-    width: 30px;
-    height: 31px;
-  } */
-  /* .calendar-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0px 5px 0px;
-    margin-left: -18px;
-    font-size: 12px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-  }
-  .clock-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0px 5px 0px;
-    width: 120px;
-  }
-  .clock-card span {
-    font-size: 12px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    margin-right: 1px;
-  } */
   .appointment-card-22 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 290px;
   }
   .appointment-card-top span {
@@ -1223,9 +1005,6 @@ footer {
     margin-left: -40px;
     margin-bottom: 10px;
   }
-  /* .appointment-card-top p {
-    font-size: 14px;
-  } */
   .container_1_right_content img {
     margin-left: -5px;
     width: 100%;
@@ -1452,10 +1231,13 @@ footer {
 
 /* ---------------------------MOBILE VERSION ------------------------------------- */
 /* ---------------------------MOBILE VERSION ------------------------------------- */
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 420px) {
   .nav_bar {
     gap: 110px;
     padding: 10px 40px 0 20px;
+  }
+  .menu-bar ul li a {
+    display: none;
   }
   .container_1_content {
     display: flex;
@@ -1469,28 +1251,31 @@ footer {
   }
   .heading h1 {
     font-size: 16px;
-    width: 550px;
+    width: 350px;
     text-align: center;
+    margin-left: 95px;
+    margin-bottom: 10px;
   }
   .heading p {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    font-size: 13px;
-    margin-top: 15px;
+    font-size: 12px;
+    margin-top: 5px;
     margin-bottom: -35px;
+    margin-left: 95px;
     color: #353434;
-    width: 550px;
+    width: 350px;
     text-align: center;
   }
   .appointment-card {
     background-color: #fbfbfb;
     border-radius: 12px;
-    padding: 10px 50px 0px 50px;
+    padding: 10px 10px 0px 10px;
     position: relative;
     width: 335px;
     box-shadow: 1px 1px 3px 3px #f6f6f6;
-    margin-top: 80px;
-    margin-left: 60px;
+    margin-top: 90px;
+    margin-left: 90px;
   }
   .appointment-card-top {
     padding: 10px 0px 20px 0px;
@@ -1547,41 +1332,39 @@ footer {
     margin-bottom: 10px;
   }
   .container_1_right_content img {
-    margin-left: 210px;
-    width: 80%;
+    margin-left: 160px;
+    width: 335px;
     height: 377px;
   }
   .container_2 {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
-
   .container_2_right {
-    width: auto;
+    width: 370px;
     border: 2px solid var(--primary-color);
     border-radius: 5px;
     box-shadow: 1px 1px 2px 2px #f6f6f6;
-    margin: 30px 0;
-    padding: 10px 10px 20px 25px;
+    margin: 30px 0px 30px 0;
+    padding: 10px 10px 20px 10px;
   }
   .container_2_img img {
-    width: 300px;
+    width: 335px;
     height: 251px;
-    position: relative;
+    /* position: relative; */
     left: 10px;
   }
   .container_2_heading h2 {
     font-size: 16px;
+    width: 350px;
   }
   .container_2_heading p {
     text-align: left;
-    font-size: 12px;
+    font-size: 11px;
     margin-top: 10px;
     color: #000000;
-    width: 370px;
+    width: 350px;
     margin-bottom: 25px;
+    padding-left: 10px;
   }
   .div-sub-1 img,
   .div-sub-2 img {
@@ -1617,8 +1400,8 @@ footer {
     padding: 0 10px 0 110px;
     border-radius: 12px;
     margin-bottom: 30px;
-    margin-left: -50px;
-    width: 350px;
+    margin-left: -70px;
+    width: 335px;
   }
   .container_3_left_1 {
     text-align: left;
@@ -1631,10 +1414,7 @@ footer {
     margin-left: 5px;
   }
   .container_4 {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   .container_4_left {
     text-align: left;
@@ -1642,10 +1422,9 @@ footer {
     padding-left: 10px;
     border-radius: 12px;
     margin-bottom: -40px;
+    padding-right: 10px;
   }
   .container_5 .container_5_heading {
-    text-align: center;
-    background-color: #ebfff5;
     padding-bottom: 130px;
     margin-top: -250px;
   }
@@ -1688,20 +1467,20 @@ footer {
     margin-top: -40px;
   }
   .container_6 .container_6_left img {
-    width: 360px;
+    width: 335px;
     height: 320px;
-    margin-left: 5px;
+    margin-right: 10px;
   }
   .container_6 .container_6_right {
-    width: 300px;
+    width: 335px;
     margin-top: -55px;
   }
   .container_6 .container_6_right h2 {
-    font-family: "Caudex", serif;
-    font-weight: 700;
     font-size: 22px;
     color: #034561;
-    text-align: center;
+    /* text-align: center; */
+    width: 350px;
+    margin-left: -22px;
   }
   .container_6 .container_6_right label {
     display: block;
@@ -1715,7 +1494,7 @@ footer {
   }
   .container_6 .container_6_right input {
     display: block;
-    width: 80%;
+    width: 270px;
     height: 30px;
     margin-left: 20px;
     border-radius: 12px;
@@ -1740,7 +1519,7 @@ footer {
     padding: 10px 90px;
   }
   .footer_card .footer_left img {
-    width: 200px;
+    width: 150px;
     margin: 20px 0 10px 0;
   }
   .footer_location {
