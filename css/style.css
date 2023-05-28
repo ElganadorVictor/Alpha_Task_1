@@ -29,7 +29,7 @@
   display: inline-block;
   padding: 0 25px;
 }
-.menu-bar ul li a {
+.mobile_menu ul li a {
   text-decoration: none;
   color: #000000;
   font-size: 20px;
@@ -37,12 +37,15 @@
   font-weight: 400;
   opacity: 70%;
 }
-.menu-bar ul li span a {
+.menu-bar a i {
+  display: none;
+}
+/* .menu-bar ul li span a {
   color: #034561;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   border-bottom: 2px solid #034561;
-}
+} */
 .menu-bar ul li span img {
   position: relative;
   right: 80px;
@@ -52,6 +55,27 @@
 .clinic-logo img,
 .menu-bar ul li span img {
   cursor: pointer;
+}
+.menu-bar .mobile_menu ul li {
+  position: relative;
+  display: block;
+  background-color: #2fe087;
+  width: 100px;
+  top: 60px;
+}
+.mobile_menu ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  opacity: 70%;
+  font-size: 14px;
+}
+.mobile_menu ul li a:hover {
+  color: #01ff27;
+}
+.mobile_menu ul li a {
+  display: none;
 }
 
 /* -------------container 1------------------ */
@@ -1238,6 +1262,29 @@ footer {
   }
   .menu-bar ul li a {
     display: none;
+  }
+  .menu-bar a i {
+    display: block;
+    margin-left: 45px;
+    cursor: pointer;
+  }
+  /* .mobile_menu ul li a {
+    display: none;
+    position: relative;
+    width: 60px;
+    top: -30px;
+    left: 295px;
+    padding: 2px 0;
+  } */
+  .drop_mobile_nav {
+    position: relative;
+    width: 60px;
+    background-color: #e2e8f9;
+    top: -30px;
+    left: 295px;
+    padding: 2px 0;
+    cursor: pointer;
+    display: block;
   }
   .container_1_content {
     display: flex;

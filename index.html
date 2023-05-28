@@ -29,6 +29,13 @@
       href="https://fonts.googleapis.com/css2?family=Caudex:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>CORNEA CLINIC</title>
   </head>
 
@@ -40,14 +47,10 @@
             <img src="./assets/images/logo.svg" alt="clinic-logo" />
           </div>
           <div class="menu-bar">
+            <a><i class="fa-solid fa-bars" onclick="dropMenu()"></i></a>
             <ul>
               <li>
-                <span
-                  ><a href="home.html"><b>Home</b></a></span
-                >
-                <span
-                  ><img src="./assets/images/Rectangle 55.svg" alt="action"
-                /></span>
+                <a href="home.html"><b>Home</b></a>
               </li>
               <li><a href="about us.html">About us</a></li>
               <li><a href="services.html">Services</a></li>
@@ -55,6 +58,17 @@
               <li><a href="login.html">Login</a></li>
             </ul>
           </div>
+        </div>
+        <div class="mobile_menu">
+          <ul>
+            <li>
+              <a href="home.html"><b>Home</b></a>
+            </li>
+            <li><a href="about us.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
         </div>
         <div class="container_1_content">
           <div class="container_1_left_content">
@@ -343,5 +357,6 @@
         </div>
       </footer>
     </div>
+    <script src="./js/apps.js"></script>
   </body>
 </html>
