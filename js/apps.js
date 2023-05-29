@@ -1,5 +1,5 @@
-const mobileMenu = document.querySelector(".mobile_menu");
+const mobileMenu = document.querySelector(".mobile_nav");
 
 function dropMenu() {
-  mobileMenu.classList.toggle("drop_mobile_nav");
+  mobileMenu.classList.toggle("show_mobile_nav");
 }
