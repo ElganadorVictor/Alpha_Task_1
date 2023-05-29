@@ -48,20 +48,19 @@
     }
     .wrapper {
       width: 100%;
-      height: 900px;
+      height: 100vh;
       background-color: white;
     }
 
     /* ---------------------Nav bar----------------- */
     .nav_bar {
-      width: 100%;
       display: flex;
       gap: 300px;
       align-items: center;
       padding: 10px 70px 0 90px;
     }
 
-    .container_1 {
+    /* .container_1 {
       background-color: #ebfff5;
       background: linear-gradient(
         to right,
@@ -69,7 +68,7 @@
         #ebfff5 50%,
         #ebfff5 100%
       );
-    }
+    } */
     .menu-bar ul li {
       list-style: none;
       display: inline-block;
@@ -116,7 +115,37 @@
     .mobile_nav ul li a:hover {
       color: #01ff27;
     }
-
+    .header {
+      width: 100%;
+      height: 150px;
+      margin-bottom: 80px;
+    }
+    .map {
+      margin-top: 150px;
+    }
+    /* -----------------------------card 7---------------------------- */
+    .container_7 {
+      display: flex;
+      gap: 90px;
+      align-items: center;
+      padding: 20px 0px 20px 90px;
+      background-color: #ebfff5;
+    }
+    .container_7_card1 img {
+      width: 30px;
+    }
+    .container_7_card1 {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      border: 1.4px solid var(--primary-color);
+      padding: 5px 20px;
+      border-radius: 12px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      opacity: 92%;
+      font-size: 13px;
+    }
     /* ----------------------Footer--------------------------------- */
     footer {
       background-color: var(--primary-color);
@@ -235,6 +264,35 @@
             <li><a href="contact.html">Contact</a></li>
             <li><a href="login.html">Login</a></li>
           </ul>
+        </div>
+      </div>
+      <div class="header">
+        <img src="./assets/images/header img.svg" alt="header-image" />
+      </div>
+      <div class="map">
+        <img src="./assets/images/map.svg" alt="map" />
+      </div>
+      <div class="container_7">
+        <div class="container_7_card1">
+          <img src="./assets/images/phone.svg" alt="phone" />
+          <div class="phone_card">
+            <p>Any questions? Call us now</p>
+            <span><strong>1*********</strong></span>
+          </div>
+        </div>
+        <div class="container_7_card1">
+          <img src="./assets/images/calendar_2.svg" alt="calendar" />
+          <div class="calendar_card">
+            <p>We are open from</p>
+            <span><strong>Mon-Fri, 10:00AM - 3:00PM</strong></span>
+          </div>
+        </div>
+        <div class="container_7_card1">
+          <img src="./assets/images/Message.svg" alt="email" />
+          <div class="email_card">
+            <p>Drop us an email</p>
+            <span><strong>corneaclinic@gmail.com</strong></span>
+          </div>
         </div>
       </div>
       <footer>
