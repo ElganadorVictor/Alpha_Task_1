@@ -49,14 +49,6 @@
 .clinic-logo img {
   cursor: pointer;
 }
-/* .mobile_nav ul li a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 20px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  opacity: 70%;
-} */
 .mobile_nav {
   width: 70px;
   top: -5px;
@@ -1256,7 +1248,7 @@ footer {
 
 /* ---------------------------MOBILE VERSION ------------------------------------- */
 /* ---------------------------MOBILE VERSION ------------------------------------- */
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 480px) {
   .nav_bar {
     gap: 110px;
     padding: 10px 40px 0 20px;
@@ -1269,26 +1261,16 @@ footer {
     margin-left: 45px;
     cursor: pointer;
   }
-  /* .mobile_menu ul li a {
-    display: none;
-    position: relative;
-    width: 60px;
-    top: -30px;
-    left: 295px;
-    padding: 2px 0;
-  } */
   .show_mobile_nav {
     position: relative;
     width: 80px;
     top: -10px;
-    left: 280px;
+    left: 300px;
     padding: 2px 30px 2px 0;
     cursor: pointer;
     display: block;
-    background-color: #0fec7e;
   }
   .mobile_nav ul li {
-    background-color: #353434;
     padding-right: 50px;
     padding-top: 10px;
     font-size: 14px;

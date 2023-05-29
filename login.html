@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@600&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@600&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@600&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Caudex:wght@700&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+        <title>CORNEA CLINIC</title>
+      </head>
+<style>
+    * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border box;
+}
+:root {
+  --primary-color: #4fb783;
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+
+/* ---------------------Nav bar----------------- */
+.nav_bar {
+  display: flex;
+  gap: 300px;
+  align-items: center;
+  padding: 10px 70px 0 90px;
+}
+
+.container_1 {
+  background-color: #ebfff5;
+  background: linear-gradient(to right, #faf3dc 0%, #ebfff5 50%, #ebfff5 100%);
+}
+.menu-bar ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 25px;
+}
+.menu-bar a i {
+  display: none;
+}
+.menu-bar ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  opacity: 70%;
+  font-size: 14px;
+}
+.menu-bar ul li span img {
+  position: relative;
+  right: 80px;
+  top: 5px;
+}
+.main-bar ul li a:hover,
+.clinic-logo img {
+  cursor: pointer;
+}
+.mobile_nav {
+  width: 70px;
+  top: -5px;
+  right: 20px;
+  display: none;
+}
+.mobile_nav ul li {
+  list-style: none;
+}
+.mobile_nav ul li a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  opacity: 70%;
+  font-size: 12px;
+  color: #000000;
+  padding: 30px 5px 30px 25px;
+}
+.mobile_nav ul li a:hover {
+  color: #01ff27;
+}
+</style>
+<body>
+    <div class="wrapper">
+      <div class="container_1"
+        <div class="nav_bar">
+          <div class="clinic-logo">
+            <img src="./assets/images/logo.svg" alt="clinic-logo" />
+          </div>
+          <div class="menu-bar">
+            <a><i class="fa-solid fa-bars" onclick="dropMenu()"></i></a>
+            <ul>
+              <li>
+                <a href="home.html"><b>Home</b></a>
+              </li>
+              <li><a href="about us.html">About us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mobile_nav">
+          <ul>
+            <li>
+              <a href="home.html"><b>Home</b></a>
+            </li>
+            <li><a href="about us.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+      </div>
+      <footer>
+        <div class="footer_card">
+          <div class="footer_left">
+            <img src="./assets/images/logo.svg" alt="logo" />
+            <div class="footer_location">
+              <span
+                ><img src="./assets/images/location.svg" alt="location-icon"
+              /></span>
+              <p>3B- sector, chowk Ahmedabad, Gujarat</p>
+            </div>
+            <div class="footer_socials">
+              <span
+                ><img src="./assets/images/facebook.svg" alt="Facebook"
+              /></span>
+              <span
+                ><img src="./assets/images/instagram.svg" alt="Instagram"
+              /></span>
+              <span
+                ><img src="./assets/images/Twitter.svg" alt="Twitter"
+              /></span>
+            </div>
+          </div>
+          <div class="footer_right">
+            <span><strong>QUICK LINKS</strong></span>
+            <ul>
+              <li a href="about us.html">About us</li>
+              <li a href="services.html">Services</li>
+              <li a href="contact.html">Contact us</li>
+              <li a href="login.html">Login</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_line">
+          <p>© 2023 Cornea clinic PVT. LTD. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/apps.js"></script>
+  </body>
+</html>
