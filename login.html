@@ -123,6 +123,65 @@
     .map {
       /* margin-top: 150px; */
     }
+    /* --------------Card 6--------------------------------- */
+    .container_6 {
+      display: flex;
+      gap: 110px;
+      align-items: center;
+    }
+    .container_6 .container_6_left img {
+      width: 560px;
+      height: 370px;
+      margin-left: -10px;
+    }
+    .container_6 .container_6_right {
+      width: 280px;
+    }
+    .container_6 .container_6_right h2 {
+      font-family: "Caudex", serif;
+      font-weight: 700;
+      font-size: 22px;
+      color: #034561;
+      text-align: center;
+    }
+    .container_6 .container_6_right label {
+      display: block;
+      margin-left: 10px;
+      margin-top: 20px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      opacity: 92%;
+      font-size: 13px;
+      padding-bottom: 5px;
+    }
+    .container_6 .container_6_right input {
+      display: block;
+      width: 90%;
+      height: 30px;
+      margin-left: 10px;
+      border-radius: 12px;
+      border: 1px solid #808080;
+      margin-bottom: 20px;
+    }
+    .container_6 .container_6_right button {
+      display: block;
+      width: 90%;
+      margin-left: 10px;
+      border-radius: 12px;
+      border: 1px solid #808080;
+      margin-bottom: 20px;
+      margin-top: 30px;
+      padding: 8px 20px;
+      border-radius: 12px;
+      background-color: var(--primary-color);
+      color: #ffffff;
+      border: 2px solid var(--primary-color);
+    }
+    .container_6 .container_6_right button:hover {
+      background-color: #ffffff;
+      cursor: pointer;
+      color: var(--primary-color);
+    }
     /* -----------------------------card 7---------------------------- */
     .container_7 {
       display: flex;
@@ -268,6 +327,23 @@
       </div>
       <div class="header">
         <img src="./assets/images/header img.svg" alt="header-image" />
+      </div>
+      <div class="container_6">
+        <div class="container_6_right">
+          <h2>Book an appointment today</h2>
+          <form action="submit">
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+            <label for="Email">Email</label>
+            <input type="email" id="email" />
+            <label for="Phone">Phone</label>
+            <input type="tel" id="tel-number" />
+            <button type="submit">Submit</button>
+          </form>
+          <div class="right_box">
+            <div class="working_hour"></div>
+          </div>
+        </div>
       </div>
       <div class="map">
         <img src="./assets/images/map.svg" alt="map" />
