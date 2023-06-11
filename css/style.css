@@ -45,9 +45,10 @@
   right: 80px;
   top: 5px;
 }
-.main-bar ul li a:hover,
+.menu-bar ul li a:hover,
 .clinic-logo img {
   cursor: pointer;
+  color: rgb(0, 255, 68);
 }
 .mobile_nav {
   max-width: 70px;
@@ -227,7 +228,11 @@
   min-width: 150px;
   height: 477px;
 }
-.container_2,
+.container_2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .div-cert {
   display: flex;
   justify-content: space-between;
@@ -253,22 +258,23 @@
   margin-left: -10px;
 }
 .container_2_right {
-  max-width: 1300px;
-  min-width: 500px;
+  width: 700px;
   border: 2px solid var(--primary-color);
   border-radius: 5px;
   box-shadow: 1px 1px 2px 2px #f6f6f6;
-  margin: 30px 280px 30px 0;
-  padding: 20px 30px 20px 220px;
+  /* margin: 30px 280px 30px 0; */
+  margin: 30px 50px 30px 0;
+  padding: 20px 30px 20px 180px;
 }
 .container_2_heading h2 {
   text-align: left;
   font-family: "Caudex", serif;
   font-weight: 700;
   font-size: 22px;
-  max-width: 386px;
-  min-width: 150px;
+  /* max-width: 386px;
+  min-width: 150px; */
   color: #034561;
+  margin: 0 auto;
 }
 .container_2_heading p {
   text-align: left;
@@ -278,8 +284,8 @@
   font-size: 13px;
   margin-top: 20px;
   color: #000000;
-  max-width: 510px;
-  min-width: 150px;
+  /* max-width: 510px;
+  min-width: 150px; */
   margin-bottom: 25px;
 }
 .container_2_img img {
@@ -307,7 +313,7 @@
 /* ------------------------------card 3------------------------- */
 .container_3 {
   display: flex;
-  gap: 30px;
+  gap: 140px;
   align-items: center;
 }
 .container_3_left {
@@ -405,14 +411,14 @@
   font-weight: 400;
   opacity: 92%;
   font-size: 13px;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 .container_4_left ul li {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   opacity: 92%;
   font-size: 13px;
-  padding: 15px 0;
+  padding: 10px 0;
   margin-left: 15px;
 }
 .container_4_left button {
@@ -433,12 +439,18 @@
   color: var(--primary-color);
 }
 .container_4_right {
-  max-width: 400px;
-  min-width: 150px;
+  /* max-width: 400px;
+  min-width: 150px; */
+  width: 30%;
   margin-bottom: 96px;
   background-color: #f1f1f1;
   padding-bottom: 30px;
   border-radius: 10px;
+}
+.container_4_right img {
+  max-width: 600px;
+  min-width: 100px;
+  margin-bottom: 10px;
 }
 .container_4_right h3 {
   font-family: "Caudex", serif;
@@ -476,10 +488,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 240px 0 100px;
-  margin-right: 20px;
-  margin-top: -90px;
-  margin-bottom: 30px;
+  padding: 0 100px 0 100px;
+  /* margin: -90px 20px 30px 0; */
+  margin: -90px auto 30px auto;
 }
 .container_5_cards .container_5_card_1 {
   border: 2px solid var(--primary-color);
