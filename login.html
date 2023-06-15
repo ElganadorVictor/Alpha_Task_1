@@ -38,262 +38,138 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>CORNEA CLINIC</title>
   </head>
-  <!-- <style>
-    * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border box;
-    }
-    :root {
-      --primary-color: #4fb783;
-    }
-    .wrapper {
-      width: 100%;
-      height: 100vh;
-      background-color: white;
-    }
-
-    /* ---------------------Nav bar----------------- */
-    .nav_bar {
+  <style>
+    .form_container {
       display: flex;
-      gap: 300px;
+      justify-content: center;
       align-items: center;
-      padding: 10px 70px 0 90px;
+      height: 320px;
+      /* position: relative; */
     }
-
-    /* .container_1 {
-      background-color: #ebfff5;
-      background: linear-gradient(
-        to right,
-        #faf3dc 0%,
-        #ebfff5 50%,
-        #ebfff5 100%
-      );
-    } */
-    .menu-bar ul li {
-      list-style: none;
-      display: inline-block;
-      padding: 0 25px;
-    }
-    .menu-bar a i {
-      display: none;
-    }
-    .menu-bar ul li a {
-      text-decoration: none;
-      color: #000000;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 400;
-      opacity: 70%;
-      font-size: 14px;
-    }
-    .menu-bar ul li span img {
-      position: relative;
-      right: 80px;
-      top: 5px;
-    }
-    .main-bar ul li a:hover,
-    .clinic-logo img {
-      cursor: pointer;
-    }
-    .mobile_nav {
-      width: 70px;
-      top: -5px;
-      right: 20px;
-      display: none;
-    }
-    .mobile_nav ul li {
-      list-style: none;
-    }
-    .mobile_nav ul li a {
-      text-decoration: none;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 400;
-      opacity: 70%;
-      font-size: 12px;
-      color: #000000;
-      padding: 30px 5px 30px 25px;
-    }
-    .mobile_nav ul li a:hover {
-      color: #01ff27;
-    }
-    .header {
-      /* width: 100%;
-      height: 150px;
-      margin-bottom: 80px; */
-    }
-    .map {
-      /* margin-top: 150px; */
-    }
-    /* --------------Card 6--------------------------------- */
-    .container_6 {
+    .form_container_left {
+      background-color: #ffffff;
       display: flex;
-      gap: 110px;
-      align-items: center;
+      flex-direction: column;
+      height: 430px;
+      width: 350px;
+      padding: 20px;
+      box-shadow: 1px 1px 4px 2px #f6f6f6;
     }
-    .container_6 .container_6_left img {
-      width: 560px;
-      height: 370px;
-      margin-left: -10px;
-    }
-    .container_6 .container_6_right {
-      width: 280px;
-    }
-    .container_6 .container_6_right h2 {
+    .form_container_left h2 {
+      text-align: center;
       font-family: "Caudex", serif;
-      font-weight: 700;
-      font-size: 22px;
-      color: #034561;
-      text-align: center;
+      margin-bottom: 20px;
     }
-    .container_6 .container_6_right label {
-      display: block;
-      margin-left: 10px;
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 45px;
+    }
+    form label {
+      font-family: "Open Sans", sans-serif;
+      font-size: 12px;
+    }
+    form input {
+      height: 20px;
+      border-radius: 12px;
+      margin: 5px 0 10px 0;
+      padding: 5px 10px;
+      border: 1px solid #e3dddd;
+      box-shadow: 1px 1px 2px 1px #f6f6f6;
+    }
+    form textarea {
+      border-radius: 12px;
+      border: 1px solid #e3dddd;
+      box-shadow: 1px 1px 2px 1px #f6f6f6;
+      margin-bottom: 40px;
+      margin-top: 5px;
+      padding: 5px 10px;
+    }
+    form button {
+      padding: 5px 0;
+      border: 1px solid #e3dddd;
+      box-shadow: 0 0 1px 0 #f6f6f6;
+      background-color: #4fb783;
+      border-radius: 12px;
+      color: #f6f6f6;
+      font-family: "Open Sans", sans-serif;
+      font-size: 12px;
+    }
+    .form_container_right {
+      background-color: #4fb783;
+      height: 430px;
+      width: 350px;
+      padding: 20px;
+      box-shadow: 0px 0px 2px 1px #b4f7bc;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 20px 10px 20px 50px;
+    }
+    .working_hour_card {
+      display: flex;
+      flex-direction: column;
       margin-top: 20px;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 400;
-      opacity: 92%;
-      font-size: 13px;
-      padding-bottom: 5px;
     }
-    .container_6 .container_6_right input {
-      display: block;
-      width: 90%;
-      height: 30px;
-      margin-left: 10px;
-      border-radius: 12px;
-      border: 1px solid #808080;
+    .working_hour,
+    .location,
+    .helpline {
+      display: flex;
+      align-items: center;
       margin-bottom: 20px;
-    }
-    .container_6 .container_6_right button {
-      display: block;
-      width: 90%;
-      margin-left: 10px;
-      border-radius: 12px;
-      border: 1px solid #808080;
-      margin-bottom: 20px;
-      margin-top: 30px;
-      padding: 8px 20px;
-      border-radius: 12px;
-      background-color: var(--primary-color);
       color: #ffffff;
-      border: 2px solid var(--primary-color);
     }
-    .container_6 .container_6_right button:hover {
-      background-color: #ffffff;
-      cursor: pointer;
-      color: var(--primary-color);
-    }
-    /* -----------------------------card 7---------------------------- */
-    .container_7 {
-      display: flex;
-      gap: 90px;
-      align-items: center;
-      padding: 20px 0px 20px 90px;
-      background-color: #ebfff5;
-    }
-    .container_7_card1 img {
-      width: 30px;
-    }
-    .container_7_card1 {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      border: 1.4px solid var(--primary-color);
-      padding: 5px 20px;
-      border-radius: 12px;
+    .form_container_right h3 {
+      font-size: 14px;
       font-family: "Open Sans", sans-serif;
-      font-weight: 400;
-      opacity: 92%;
-      font-size: 13px;
+      /* font-family: "Caudex", serif; */
     }
-    /* ----------------------Footer--------------------------------- */
-    footer {
-      background-color: var(--primary-color);
-    }
-    .footer_card {
+    .working_hour_date,
+    .working_hour_date_2,
+    .location_card span,
+    .helpline_card span {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 90px;
-    }
-    .footer_card .footer_left img {
-      width: 120px;
-      margin: 20px 0 10px 0;
-    }
-    .footer_location {
-      display: flex;
+      flex-direction: column;
       gap: 5px;
-      align-items: center;
-      margin-right: 20px;
-      width: 170px;
-    }
-    .footer_card .footer_left .footer_location img {
-      width: 18px;
-      padding-right: 10px;
-    }
-    .footer_card .footer_left .footer_location p {
-      margin-top: 10px;
-      margin-left: -5px;
-      color: #ffffff;
+      font-size: 12px;
       font-family: "Open Sans", sans-serif;
-      font-weight: 400;
-      font-size: 13px;
+      color: #f6f6f6;
+      margin: 0 0 20px 30px;
     }
-    .footer_card .footer_left .footer_socials img {
-      width: 30px;
-      padding: 10px 0;
-      padding-right: 28px;
-    }
-    .footer_right span {
-      margin: 20px 0 10px 0;
+    .location img {
+      width: 15px;
       color: #ffffff;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 400;
-      font-size: 13px;
     }
-    .footer_right ul li {
-      padding: 13px 0;
-      color: #ffffff;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 400;
-      font-size: 13px;
-    }
-    .footer_right ul li:hover {
-      color: #9cf0c6;
-      cursor: pointer;
-    }
-    .footer_right ul li {
-      list-style: none;
-    }
-    .footer_line {
-      padding-bottom: 20px;
-    }
-    .footer_line p {
+    .header img,
+    .map img {
       width: 100%;
-      text-align: center;
-      color: #ffffff;
-      font-family: "Open Sans", sans-serif;
-      position: relative;
+      display: flex;
+      flex-wrap: wrap;
     }
-    .footer_line p::before {
-      content: "";
-      height: 1.5px;
-      width: 34.5%;
-      background-color: #ffffff;
-      position: absolute;
-      top: 9px;
-      left: 0px;
+
+    /* *********Responsiveness********** */
+    @media only screen and (max-width: 960px) {
+      .form_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-wrap: wrap;
+        margin: 0 auto;
+      }
+      .form_container_left {
+        height: 400px;
+        width: 300px;
+        padding: 20px 10px 40px 10px;
+      }
+      .form_container_right {
+        height: 400px;
+        width: 285px;
+        padding: 20px 10px 40px 25px;
+      }
     }
-    .footer_line p::after {
-      content: "";
-      height: 1.5px;
-      width: 34.5%;
-      background-color: #ffffff;
-      position: absolute;
-      top: 9px;
-      right: 0px;
-    }
-  </style> -->
+  </style>
+
   <body>
     <div class="wrapper">
       <div class="container_1">
@@ -329,9 +205,9 @@
       <div class="header">
         <img src="./assets/images/header img.svg" alt="header-image" />
       </div>
-      <div class="container_6">
-        <div class="container_6_right">
-          <h2>Book an appointment today</h2>
+      <div class="form_container">
+        <div class="form_container_left">
+          <h2>Contact us</h2>
           <form action="submit">
             <label for="name">Name</label>
             <input type="text" id="name" />
@@ -339,10 +215,44 @@
             <input type="email" id="email" />
             <label for="Phone">Phone</label>
             <input type="tel" id="tel-number" />
-            <button type="submit">Submit</button>
+            <label for="Message">Message</label>
+            <textarea
+              name="Message"
+              id="textarea"
+              cols="10"
+              rows="5"
+            ></textarea>
+            <button type="submit">Send</button>
           </form>
-          <div class="right_box">
-            <div class="working_hour"></div>
+        </div>
+        <div class="form_container_right">
+          <div class="working_hour_card">
+            <div class="working_hour">
+              <img src="./assets/images/time_white.svg" alt="clock" />
+              <h3>Working hours</h3>
+            </div>
+            <div class="working_hour_date">
+              <span>Monday - Friday</span>
+              <span>10:00 AM - 7:00 PM</span>
+            </div>
+            <div class="working_hour_date_2">
+              <span>Saturday</span>
+              <span>10:00 AM - 5:00 PM</span>
+            </div>
+          </div>
+          <div class="location_card">
+            <div class="location">
+              <img src="./assets/images/location.svg" alt="location-icon" />
+              <h3>Location</h3>
+            </div>
+            <span>3B- sector41, Gandhi chowk <br />Ahmedabad, Gujarat</span>
+          </div>
+          <div class="helpline_card">
+            <div class="helpline">
+              <img src="./assets/images/phone-copy.svg" alt="phone" />
+              <h3>Helpline no.</h3>
+            </div>
+            <span>7897896543</span>
           </div>
         </div>
       </div>

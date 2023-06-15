@@ -632,7 +632,10 @@ footer {
   max-width: 170px;
   min-width: 50px;
 }
-.footer_card .footer_left .footer_location img {
+.footer_card .footer_left .footer_location img,
+.location img,
+.working_hour img,
+.helpline img {
   max-width: 18px;
   min-width: 10px;
   padding-right: 10px;
@@ -1378,13 +1381,14 @@ footer {
   }
   .show_mobile_nav {
     position: relative;
-    max-width: 80px;
-    min-width: 50px;
+    max-width: 60px;
+    min-width: 30px;
     top: -10px;
-    left: 285px;
+    left: 235px;
     padding: 2px 30px 2px 0;
     cursor: pointer;
     display: block;
+    background-color: #034561;
   }
   .mobile_nav ul li {
     padding-right: 50px;
@@ -1768,3 +1772,17 @@ footer {
 }
 /* --------------------------------Responsiveness------------------------------- */
 /* ------------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 330px) {
+  .show_mobile_nav {
+    position: relative;
+    max-width: 60px;
+    min-width: 30px;
+    top: -10px;
+    left: 70px;
+    padding: 2px 30px 2px 0;
+    cursor: pointer;
+    display: block;
+    background-color: #034561;
+  }
+}
