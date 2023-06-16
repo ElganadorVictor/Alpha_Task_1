@@ -1272,7 +1272,6 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* background-color: #c4f7cc; */
   }
   .container_6 .container_6_left {
     width: 50%;
@@ -1388,7 +1387,6 @@ footer {
     padding: 2px 30px 2px 0;
     cursor: pointer;
     display: block;
-    background-color: #034561;
   }
   .mobile_nav ul li {
     padding-right: 50px;
@@ -1778,21 +1776,6 @@ footer {
 }
 /* --------------------------------Responsiveness------------------------------- */
 /* ------------------------------------------------------------------------------ */
-
-/* @media only screen and (max-width: 365px) {
-  .container_6 {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
-  }
-  .container_6 .container_6_left img {
-    max-width: 240px;
-    min-width: 50px;
-    height: 280px;
-    margin-left: 5px;
-  }
-} */
 
 @media only screen and (max-width: 330px) {
   .show_mobile_nav {
