@@ -584,6 +584,18 @@
   cursor: pointer;
   color: var(--primary-color);
 }
+.message {
+  display: none;
+}
+.messagePhone {
+  display: none;
+}
+.success {
+  color: green;
+}
+.error {
+  color: red;
+}
 
 /* -----------------------------card 7---------------------------- */
 .container_7 {

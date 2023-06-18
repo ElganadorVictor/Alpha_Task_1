@@ -1,20 +1,40 @@
-const mobileMenu = document.querySelector(".mobile_nav");
-const name = document.querySelector("#name");
-const email = document.querySelector("#email");
-const phone = document.querySelector("#number");
+let appointForm = document.querySelector(".appointForm");
+let msgElem = document.querySelector(".message");
+let msgPhone = document.querySelector(".messagePhone");
+// console.log(appointForm);
+appointForm.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-function dropMenu() {
-  mobileMenu.classList.toggle("show_mobile_nav");
+  let username = event.currentTarget.username.value.trim();
+  let usermail = event.currentTarget.usermail.value.trim();
+  let phone = event.currentTarget.phone.value.trim();
+  console.log(username, usermail, phone);
+
+  if (phone.length < 11) {
+    msgPhone.style.display = "block";
+    msgPhone.textContent =
+      "Username cannot be empty or less than 4 letters and Phone number should be greater than 10";
+    msgPhone.classList.add("error");
+    removeMessage();
+    return;
+  }
+
+  if (username && usermail && phone) {
+    msgElem.textContent = "You have succesfully Booked an Appointment";
+    msgElem.style.display = "block";
+    msgElem.classList.add("success");
+    removeMessage();
+  } else {
+    msgElem.textContent = "Check your details again";
+    msgElem.style.display = "block";
+    msgElem.classList.add("error");
+    removeMessage();
+  }
+});
+
+function removeMessage() {
+  setTimeout(() => {
+    msgElem.style.display = "none";
+    msgPhone.style.display = "none";
+  }, "3000");
 }
-
-function SubmitBtn() {
-  alert(`you have succesfully created an account, ENJOY!`);
-}
-
-// function SubmitBtn() {
-//   if (name == "Victor" && email == "ganad@gmail.com" && phone == 0122334455) {
-//     alert("You have succefully booked an appointment. Thank you!");
-//   } else {
-//     ("Please check your details again");
-//   }
-// }
