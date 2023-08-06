@@ -1,6 +1,7 @@
 let appointForm = document.querySelector(".appointForm");
 let msgElem = document.querySelector(".message");
 let msgPhone = document.querySelector(".messagePhone");
+
 // console.log(appointForm);
 appointForm.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -37,4 +38,14 @@ function removeMessage() {
     msgElem.style.display = "none";
     msgPhone.style.display = "none";
   }, "3000");
+}
+
+// //////////////////////////////////////
+
+let hamburger = document.querySelector(".hamburger");
+let mobileNav = document.querySelector(".mobile_nav");
+
+hamburger.addEventListener("click", dropDown);
+function dropDown() {
+  mobileNav.classList.toggle("toggle");
 }

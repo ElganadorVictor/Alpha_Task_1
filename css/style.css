@@ -1390,15 +1390,14 @@ footer {
     margin-left: 45px;
     cursor: pointer;
   }
-  .show_mobile_nav {
+  .mobile_nav.toggle {
     position: relative;
-    max-width: 60px;
-    min-width: 30px;
-    top: -10px;
-    left: 235px;
+    max-width: 180px;
+    min-width: 60px;
+    margin-left: 50px;
     padding: 2px 30px 2px 0;
     cursor: pointer;
-    display: block;
+    display: flex;
   }
   .mobile_nav ul li {
     padding-right: 50px;
